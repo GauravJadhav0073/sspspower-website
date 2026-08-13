@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shree Shivsamartha Power Solutions | Solar & Electrical Solutions</title>
+
+    <meta name="description"
+        content="Shree Shivsamartha Power Solutions provides rooftop solar, solar EPC, electrical contracting, electrical installation and net metering assistance across Pune, Satara and Maharashtra.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =====================================================
+           SSPS PAGE
+        ===================================================== */
+
+        :root {
+            --ssps-blue: #0b3b57;
+            --ssps-blue-light: #168bd0;
+            --ssps-green: #8bdc24;
+            --ssps-orange: #ff9d1c;
+            --ssps-light: #f4f8fb;
+            --ssps-text: #173b55;
+            --ssps-muted: #66809a;
+            --ssps-border: #dce8ef;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--ssps-text);
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .ssps-container {
+            width: min(1180px, 90%);
+            margin: auto;
+        }
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .ssps-header {
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffffff;
+            border-bottom: 1px solid var(--ssps-border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .ssps-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ssps-logo-mark {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: var(--ssps-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 23px;
+        }
+
+        .ssps-logo-text strong {
+            display: block;
+            font-size: 18px;
+            color: var(--ssps-blue);
+        }
+
+        .ssps-logo-text small {
+            display: block;
+            margin-top: 3px;
+            font-size: 9px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: var(--ssps-green);
+        }
+
+        .ssps-nav {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .ssps-nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--ssps-blue);
+        }
+
+        .ssps-nav a:hover {
+            color: var(--ssps-blue-light);
+        }
+
+        .ssps-nav .quote-btn {
+            padding: 15px 22px;
+            border-radius: 10px;
+            color: white;
+            background: var(--ssps-orange);
+        }
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .ssps-hero {
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+            color: white;
+            background:
+                linear-gradient(120deg, #082f49, #0d617b 55%, #12828d);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ssps-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: .12;
+            background-image:
+                repeating-linear-gradient(
+                    135deg,
+                    transparent 0px,
+                    transparent 28px,
+                    #ffffff 29px,
+                    transparent 31px
+                );
+        }
+
+        .ssps-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 730px;
+        }
+
+        .ssps-label {
+            display: inline-block;
+            padding: 10px 18px;
+            border: 1px solid rgba(255,255,255,.3);
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 25px;
+        }
+
+        .ssps-hero h1 {
+            font-size: clamp(48px, 6vw, 78px);
+            line-height: .98;
+            margin: 0 0 25px;
+            letter-spacing: -2px;
+        }
+
+        .ssps-hero h1 span {
+            color: var(--ssps-green);
+        }
+
+        .ssps-hero p {
+            max-width: 700px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: rgba(255,255,255,.86);
+        }
+
+        .ssps-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .ssps-btn {
+            padding: 17px 25px;
+            border-radius: 9px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .ssps-btn-primary {
+            background: var(--ssps-orange);
+            color: white;
+        }
+
+        .ssps-btn-secondary {
+            border: 1px solid rgba(255,255,255,.5);
+            color: white;
+        }
+
+        .ssps-focus-card {
+            position: absolute;
+            right: 7%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 330px;
+            padding: 35px;
+            border-radius: 25px;
+            border: 1px solid rgba(255,255,255,.25);
+            background: rgba(255,255,255,.10);
+            backdrop-filter: blur(10px);
+            z-index: 2;
+        }
+
+        .ssps-focus-card i {
+            font-size: 42px;
+            color: var(--ssps-blue-light);
+            background: white;
+            padding: 18px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+        }
+
+        .ssps-focus-card h3 {
+            font-size: 25px;
+            margin: 10px 0 20px;
+        }
+
+        .ssps-focus-card ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .ssps-focus-card li {
+            margin: 13px 0;
+        }
+
+        .ssps-focus-card li::before {
+            content: "✓";
+            color: var(--ssps-green);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* =====================================================
+           COMMON SECTIONS
+        ===================================================== */
+
+        .ssps-section {
+            padding: 100px 0;
+        }
+
+        .ssps-section-light {
+            background: var(--ssps-light);
+        }
+
+        .ssps-section-label {
+            color: var(--ssps-blue-light);
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .ssps-section-title {
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.05;
+            margin: 0 0 25px;
+            color: var(--ssps-blue);
+        }
+
+        .ssps-section-title span {
+            color: var(--ssps-blue-light);
+        }
+
+        .ssps-section-text {
+            color: var(--ssps-muted);
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .ssps-about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .ssps-about-card {
+            padding: 35px;
+            border-radius: 25px;
+            background: var(--ssps-light);
+            border: 1px solid var(--ssps-border);
+        }
+
+        .ssps-about-card h3 {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .ssps-about-item {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--ssps-border);
+        }
+
+        .ssps-about-item:last-child {
+            border-bottom: none;
+        }
+
+        .ssps-about-item strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .ssps-about-item span {
+            color: var(--ssps-muted);
+        }
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .ssps-center-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 55px;
+        }
+
+        .ssps-services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .ssps-service-card {
+            padding: 32px;
+            background: white;
+            border: 1px solid var(--ssps-border);
+            border-radius: 20px;
+            transition: .25s;
+        }
+
+        .ssps-service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(11,59,87,.10);
+        }
+
+        .ssps-service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: #eaf6fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ssps-blue-light);
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .ssps-service-card h3 {
+            font-size: 21px;
+            margin: 0 0 14px;
+        }
+
+        .ssps-service-card p {
+            color: var(--ssps-muted);
+            line-height: 1.7;
+        }
+
+        /* =====================================================
+           WHO WE SERVE
+        ===================================================== */
+
+        .ssps-customer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .ssps-customer-card {
+            text-align: center;
+            padding: 35px 22px;
+            border: 1px solid var(--ssps-border);
+            border-radius: 20px;
+            background: white;
+        }
+
+        .ssps-customer-card i {
+            font-size: 27px;
+            color: var(--ssps-blue-light);
+            margin-bottom: 18px;
+        }
+
+        .ssps-customer-card h3 {
+            margin: 5px 0 12px;
+        }
+
+        .ssps-customer-card p {
+            color: var(--ssps-muted);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           PROCESS
+        ===================================================== */
+
+        .ssps-process {
+            background: var(--ssps-blue);
+            color: white;
+        }
+
+        .ssps-process .ssps-section-title {
+            color: white;
+        }
+
+        .ssps-process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .ssps-process-card {
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: rgba(255,255,255,.04);
+            border-radius: 18px;
+        }
+
+        .ssps-process-number {
+            color: var(--ssps-green);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .ssps-process-card h3 {
+            margin: 25px 0 12px;
+        }
+
+        .ssps-process-card p {
+            color: rgba(255,255,255,.7);
+            line-height: 1.6;
+        }
+
+        /* =====================================================
+           WHY CHOOSE
+        ===================================================== */
+
+        .ssps-why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .ssps-why-box {
+            background: var(--ssps-light);
+            border: 1px solid var(--ssps-border);
+            padding: 45px;
+            border-radius: 25px;
+        }
+
+        .ssps-why-box strong {
+            font-size: 70px;
+            color: var(--ssps-blue-light);
+        }
+
+        .ssps-why-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .ssps-why-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .ssps-why-item p {
+            color: var(--ssps-muted);
+            line-height: 1.6;
+        }
+
+        /* =====================================================
+           SERVICE AREA
+        ===================================================== */
+
+        .ssps-area {
+            text-align: center;
+        }
+
+        .ssps-area-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .ssps-area-list span {
+            padding: 14px 25px;
+            border-radius: 30px;
+            background: #edf8e0;
+            color: #4f8014;
+            font-weight: bold;
+        }
+
+        /* =====================================================
+           GROUP
+        ===================================================== */
+
+        .ssps-group {
+            background: var(--ssps-light);
+        }
+
+        .ssps-group-box {
+            padding: 50px;
+            border-radius: 25px;
+            background: white;
+            border: 1px solid var(--ssps-border);
+            text-align: center;
+        }
+
+        .ssps-group-box h2 {
+            font-size: 40px;
+            color: var(--ssps-blue);
+            margin-top: 0;
+        }
+
+        .ssps-group-box p {
+            max-width: 760px;
+            margin: auto;
+            color: var(--ssps-muted);
+            line-height: 1.8;
+        }
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .ssps-cta {
+            padding: 75px 0;
+        }
+
+        .ssps-cta-box {
+            padding: 55px;
+            border-radius: 25px;
+            color: white;
+            background: linear-gradient(110deg, #0879ba, #118b8e);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .ssps-cta-box h2 {
+            font-size: 40px;
+            margin: 0 0 10px;
+        }
+
+        .ssps-cta-box p {
+            margin: 0;
+            color: rgba(255,255,255,.85);
+        }
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .ssps-contact {
+            background: var(--ssps-light);
+        }
+
+        .ssps-contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .ssps-contact-card {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--ssps-border);
+            border-radius: 18px;
+        }
+
+        .ssps-contact-card i {
+            color: var(--ssps-blue-light);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .ssps-contact-card h3 {
+            margin: 5px 0 10px;
+        }
+
+        .ssps-contact-card p {
+            color: var(--ssps-muted);
+            line-height: 1.7;
+        }
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .ssps-footer {
+            padding: 60px 0 25px;
+            color: rgba(255,255,255,.75);
+            background: #062f48;
+        }
+
+        .ssps-footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        .ssps-footer h3 {
+            color: white;
+        }
+
+        .ssps-footer p {
+            line-height: 1.7;
+        }
+
+        .ssps-footer a {
+            display: block;
+            margin: 12px 0;
+        }
+
+        .ssps-footer a:hover {
+            color: var(--ssps-green);
+        }
+
+        .ssps-copyright {
+            margin-top: 45px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,.12);
+            font-size: 13px;
+        }
+
+        /* =====================================================
+           WHATSAPP
+        ===================================================== */
+
+        .ssps-whatsapp {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #25d366;
+            color: white;
+            font-size: 28px;
+            z-index: 2000;
+            box-shadow: 0 8px 25px rgba(0,0,0,.2);
+        }
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .ssps-nav {
+                display: none;
+            }
+
+            .ssps-focus-card {
+                display: none;
+            }
+
+            .ssps-about-grid,
+            .ssps-why-grid,
+            .ssps-contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ssps-services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .ssps-customer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .ssps-process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .ssps-footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .ssps-header {
+                height: 70px;
+            }
+
+            .ssps-logo-text strong {
+                font-size: 15px;
+            }
+
+            .ssps-hero {
+                min-height: 650px;
+            }
+
+            .ssps-hero h1 {
+                font-size: 48px;
+            }
+
+            .ssps-hero p {
+                font-size: 16px;
+            }
+
+            .ssps-section {
+                padding: 70px 0;
+            }
+
+            .ssps-services-grid,
+            .ssps-customer-grid,
+            .ssps-process-grid,
+            .ssps-why-items,
+            .ssps-footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ssps-cta-box {
+                padding: 35px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .ssps-cta-box h2 {
+                font-size: 30px;
+            }
+
+            .ssps-about-card,
+            .ssps-group-box {
+                padding: 30px;
+            }
+
+            
+        }
+
+        .ssps-logo {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .ssps-logo img {
+                width: 200px;
+                height: auto;
+                display: block;
+            }
+    </style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="ssps-header">
+    <div class="ssps-container"
+         style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+
+        <a href="./index.html" class="ssps-logo">
+    <img src="images/ssps-logo.png" alt="Shree Shivsamartha Power Solutions">
+</a>
+
+        <nav class="ssps-nav">
+
+            <a href="./index.html">Home</a>
+            <a href="#about">About SSPS</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#contact" class="quote-btn">Get a Quote →</a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="ssps-hero" id="home">
+
+    <div class="ssps-container">
+
+        <div class="ssps-hero-content">
+
+            <div class="ssps-label">
+                 SHREE SHIVSAMARTHA POWER SOLUTIONS
+            </div>
+
+            <h1>
+                Smart Solar &<br>
+                <span>Electrical Solutions</span><br>
+                for a Better Future.
+            </h1>
+
+            <p>
+                Reliable solar energy and electrical solutions for
+                residential, agricultural, commercial and industrial
+                requirements across Pune, Satara and Maharashtra.
+            </p>
+
+            <div class="ssps-buttons">
+
+                <a href="#contact" class="ssps-btn ssps-btn-primary">
+                    Get a Quote →
+                </a>
+
+                <a href="https://wa.me/918830521244"
+                target="_blank"
+                class="ssps-btn ssps-btn-secondary">
+                    WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="ssps-focus-card">
+
+            <i class="fa-solid fa-sun"></i>
+
+            <h3>Solar & Electrical</h3>
+
+            <p>Our current focus areas</p>
+
+            <ul>
+                <li>Rooftop Solar Systems</li>
+                <li>Solar EPC & Installation</li>
+                <li>Electrical Contracting</li>
+                <li>Electrical Installation</li>
+                <li>Net Metering Assistance</li>
+                <li>Commercial & Industrial Solar</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT SSPS
+===================================================== -->
+
+<section class="ssps-section" id="about">
+
+    <div class="ssps-container">
+
+        <div class="ssps-about-grid">
+
+            <div>
+
+                <div class="ssps-section-label">
+                    ABOUT SSPS
+                </div>
+
+                <h2 class="ssps-section-title">
+                    Powering homes,<br>
+                    businesses & <span>future-ready spaces.</span>
+                </h2>
+
+                <p class="ssps-section-text">
+                    Shree Shivsamartha Power Solutions (SSPS) is a
+                    renewable energy and electrical solutions business
+                    under the Shree Shivsamartha Group.
+                </p>
+
+                <p class="ssps-section-text">
+                    We provide practical and reliable solar and
+                    electrical solutions based on the actual
+                    requirements of each customer.
+                </p>
+
+                <p class="ssps-section-text">
+                    From understanding energy needs and planning the
+                    right system to installation and project support,
+                    we focus on delivering solutions that are efficient,
+                    dependable and built for long-term value.
+                </p>
+
+            </div>
+
+
+            <div class="ssps-about-card">
+
+                <h3>What SSPS focuses on</h3>
+
+                <div class="ssps-about-item">
+                    <strong>Solar Energy Solutions</strong>
+                    <span>Rooftop and project-based solar solutions.</span>
+                </div>
+
+                <div class="ssps-about-item">
+                    <strong>Electrical Services</strong>
+                    <span>Electrical contracting, installation and related work.</span>
+                </div>
+
+                <div class="ssps-about-item">
+                    <strong>Customer-Focused Execution</strong>
+                    <span>Solutions planned around actual site requirements.</span>
+                </div>
+
+                <div class="ssps-about-item">
+                    <strong>Quality Installation</strong>
+                    <span>Focus on proper installation and dependable execution.</span>
+                </div>
+
+                <div class="ssps-about-item">
+                    <strong>Part of a Business Group</strong>
+                    <span>SSPS is part of the wider Shree Shivsamartha Group.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="ssps-section ssps-section-light" id="services">
+
+    <div class="ssps-container">
+
+        <div class="ssps-center-heading">
+
+            <div class="ssps-section-label">
+                OUR SERVICES
+            </div>
+
+            <h2 class="ssps-section-title">
+                Solar & <span>Electrical Solutions.</span>
+            </h2>
+
+            <p class="ssps-section-text">
+                A focused range of solutions for residential,
+                agricultural, commercial and industrial requirements.
+            </p>
+
+        </div>
+
+
+        <div class="ssps-services-grid">
+
+            <div class="ssps-service-card">
+                <div class="ssps-service-icon">
+                    <i class="fa-solid fa-solar-panel"></i>
+                </div>
+
+                <h3>Rooftop Solar Systems</h3>
+
+                <p>
+                    Grid-connected rooftop solar solutions designed
+                    according to site conditions, electricity
+                    consumption and customer requirements.
+                </p>
+            </div>
+
+
+            <div class="ssps-service-card">
+                <div class="ssps-service-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3>Solar EPC & Installation</h3>
+
+                <p>
+                    Complete solar project execution including system
+                    planning, component selection, installation and
+                    commissioning.
+                </p>
+            </div>
+
+
+            <div class="ssps-service-card">
+                <div class="ssps-service-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <h3>Electrical Contracting</h3>
+
+                <p>
+                    Electrical contracting services for residential,
+                    commercial and industrial requirements.
+                </p>
+            </div>
+
+
+            <div class="ssps-service-card">
+                <div class="ssps-service-icon">
+                    <i class="fa-solid fa-plug"></i>
+                </div>
+
+                <h3>Electrical Installation</h3>
+
+                <p>
+                    Professional electrical installation work for
+                    new projects, upgrades and specific site
+                    requirements.
+                </p>
+            </div>
+
+
+            <div class="ssps-service-card">
+                <div class="ssps-service-icon">
+                    <i class="fa-solid fa-gauge-high"></i>
+                </div>
+
+                <h3>Net Metering Assistance</h3>
+
+                <p>
+                    Assistance with the net-metering process and
+                    related documentation for eligible grid-connected
+                    solar installations.
+                </p>
+            </div>
+
+
+            <div class="ssps-service-card">
+                <div class="ssps-service-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <h3>Commercial & Industrial Solar</h3>
+
+                <p>
+                    Solar solutions for businesses and industrial users
+                    looking to reduce conventional electricity
+                    consumption and improve energy efficiency.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHO WE SERVE
+===================================================== -->
+
+<section class="ssps-section">
+
+    <div class="ssps-container">
+
+        <div class="ssps-center-heading">
+
+            <div class="ssps-section-label">
+                WHO WE SERVE
+            </div>
+
+            <h2 class="ssps-section-title">
+                Solutions for <span>different needs.</span>
+            </h2>
+
+            <p class="ssps-section-text">
+                Solutions selected according to actual site and
+                energy requirements.
+            </p>
+
+        </div>
+
+
+        <div class="ssps-customer-grid">
+
+            <div class="ssps-customer-card">
+                <i class="fa-solid fa-house"></i>
+                <h3>Residential</h3>
+                <p>
+                    Rooftop solar and electrical solutions for homes.
+                </p>
+            </div>
+
+
+            <div class="ssps-customer-card">
+                <i class="fa-solid fa-wheat-awn"></i>
+                <h3>Agricultural</h3>
+                <p>
+                    Solar and electrical solutions for farms and
+                    agricultural requirements.
+                </p>
+            </div>
+
+
+            <div class="ssps-customer-card">
+                <i class="fa-solid fa-store"></i>
+                <h3>Commercial</h3>
+                <p>
+                    Energy and electrical solutions for shops,
+                    offices, institutions and commercial properties.
+                </p>
+            </div>
+
+
+            <div class="ssps-customer-card">
+                <i class="fa-solid fa-industry"></i>
+                <h3>Industrial</h3>
+                <p>
+                    Solar and electrical solutions for industrial
+                    facilities and higher energy requirements.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="ssps-section ssps-process" id="process">
+
+    <div class="ssps-container">
+
+        <div class="ssps-center-heading">
+
+            <div class="ssps-section-label">
+                OUR APPROACH
+            </div>
+
+            <h2 class="ssps-section-title">
+                From requirement to <span>reliable execution.</span>
+            </h2>
+
+            <p class="ssps-section-text" style="color:rgba(255,255,255,.7);">
+               A straightforward process designed to understand your
+                requirements, plan the right solution and deliver it
+                with professional execution.
+            </p>
+
+        </div>
+
+
+        <div class="ssps-process-grid">
+
+            <div class="ssps-process-card">
+                <div class="ssps-process-number">01 / UNDERSTAND</div>
+                <h3>Requirement & Site Assessment</h3>
+                <p>
+                    Understand electricity usage, site conditions,
+                    project goals and customer expectations.
+                </p>
+            </div>
+
+
+            <div class="ssps-process-card">
+                <div class="ssps-process-number">02 / PLAN</div>
+                <h3>System Planning & Quotation</h3>
+                <p>
+                    Prepare an appropriate solution based on the
+                    site, energy requirement and proposed scope.
+                </p>
+            </div>
+
+
+            <div class="ssps-process-card">
+                <div class="ssps-process-number">03 / EXECUTE</div>
+                <h3>Installation & Commissioning</h3>
+                <p>
+                    Execute the approved project with proper
+                    installation, testing and commissioning.
+                </p>
+            </div>
+
+
+            <div class="ssps-process-card">
+                <div class="ssps-process-number">04 / DOCUMENT</div>
+                <h3>Project Documentation</h3>
+                <p>
+                    Complete relevant project documentation and
+                    provide necessary handover information.
+                </p>
+            </div>
+
+
+            <div class="ssps-process-card">
+                <div class="ssps-process-number">05 / SUPPORT</div>
+                <h3>Post-Installation Support</h3>
+                <p>
+                    Provide appropriate support after project
+                    completion.
+                </p>
+            </div>
+
+
+            <div class="ssps-process-card">
+                <div class="ssps-process-number">06 / GROW</div>
+                <h3>Future Energy Planning</h3>
+                <p>
+                    Help customers plan for future solar and
+                    electrical requirements as their needs grow.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY CHOOSE SSPS
+===================================================== -->
+
+<section class="ssps-section">
+
+    <div class="ssps-container">
+
+        <div class="ssps-why-grid">
+
+            <div class="ssps-why-box">
+                <strong>SSPS</strong>
+                <h2>Shree Shivsamartha Power Solutions</h2>
+                <p class="ssps-section-text">
+                    Renewable energy and electrical solutions
+                    under the Shree Shivsamartha Group.
+                </p>
+            </div>
+
+
+            <div>
+
+                <div class="ssps-section-label">
+                    WHY CHOOSE SSPS
+                </div>
+
+                <h2 class="ssps-section-title">
+                    A practical approach to
+                    <span>better energy.</span>
+                </h2>
+
+
+                <div class="ssps-why-items">
+
+                    <div class="ssps-why-item">
+                        <h3>Requirement First</h3>
+                        <p>
+                            We begin by understanding the customer's
+                            actual requirement.
+                        </p>
+                    </div>
+
+
+                    <div class="ssps-why-item">
+                        <h3>Clear Communication</h3>
+                        <p>
+                            We keep project scope, expectations and
+                            communication simple and transparent.
+                        </p>
+                    </div>
+
+
+                    <div class="ssps-why-item">
+                        <h3>Quality-Focused</h3>
+                        <p>
+                            We focus on proper installation practices
+                            and dependable project execution.
+                        </p>
+                    </div>
+
+
+                    <div class="ssps-why-item">
+                        <h3>Long-Term Vision</h3>
+                        <p>
+                            We aim to build lasting customer
+                            relationships rather than focusing only
+                            on a single installation.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICE AREA
+===================================================== -->
+
+<section class="ssps-section ssps-section-light">
+
+    <div class="ssps-container">
+
+        <div class="ssps-area">
+
+            <div class="ssps-section-label">
+                SERVICE AREA
+            </div>
+
+            <h2 class="ssps-section-title">
+                Serving <span>Pune & Satara, across Maharashtra.</span>
+            </h2>
+
+            <p class="ssps-section-text">
+                SSPS primarily serves customers across Pune and Satara, 
+                with solar and electrical solutions available throughout Maharashtra.
+            </p>
+
+            <div class="ssps-area-list">
+                <span>Pune</span>
+                <span>Satara</span>
+                <span>Maharashtra</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GROUP
+===================================================== -->
+
+<section class="ssps-section ssps-group">
+
+    <div class="ssps-container">
+
+        <div class="ssps-group-box">
+
+            <div class="ssps-section-label">
+                SHREE SHIVSAMARTHA GROUP
+            </div>
+
+            <h2>
+                Part of a Growing Business Group.
+            </h2>
+
+            <p>
+                Shree Shivsamartha Power Solutions is part of the
+                Shree Shivsamartha Group — a growing group of
+                businesses operating across energy, industrial
+                products, construction, manufacturing and
+                commercial solutions.
+            </p>
+
+            <div style="margin-top:30px;">
+                <a href="./index.html"
+                   class="ssps-btn"
+                   style="background:#168bd0;color:white;">
+                    Explore Shree Shivsamartha Group →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="ssps-cta">
+
+    <div class="ssps-container">
+
+        <div class="ssps-cta-box">
+
+            <div>
+                <h2>Planning a Solar or Electrical Project?</h2>
+
+                <p>
+                    Tell us about your requirement and let's discuss
+                    the right solution for your site.
+                </p>
+            </div>
+
+            <a href="#contact"
+               class="ssps-btn"
+               style="background:#ff9d1c;color:white;">
+                Get a Quote →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="ssps-section ssps-contact" id="contact">
+
+    <div class="ssps-container">
+
+        <div class="ssps-center-heading">
+
+            <div class="ssps-section-label">
+                CONTACT SSPS
+            </div>
+
+            <h2 class="ssps-section-title">
+                Let's discuss your <span>requirement.</span>
+            </h2>
+
+            <p class="ssps-section-text">
+                Contact us for solar and electrical requirements
+                across Pune, Satara and Maharashtra.
+            </p>
+
+        </div>
+
+
+        <div class="ssps-contact-grid">
+
+            <div class="ssps-contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Our Location</h3>
+
+                <p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Pimpre+Khurd,+Pune+Pandharpur+Road,+Pune,+412012"
+       target="_blank"
+       style="color:#5f7fa3;text-decoration:none;">
+        Pimpre Khurd,<br>
+        Pune Pandharpur Road,<br>
+        Pune – 412012, Maharashtra
+    </a>
+</p>
+
+            </div>
+
+
+            <div class="ssps-contact-card">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <h3>WhatsApp / Phone</h3>
+
+                <p>
+                    <a href="https://wa.me/918830521244"
+                       target="_blank"
+                       style="color:#168bd0;font-weight:bold;">
+                        +91 88305 21244
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="ssps-contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>
+                    <a href="mailto:contact@sspspower.com"
+                       style="color:#168bd0;font-weight:bold;">
+                        contact@sspspower.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="ssps-contact-card">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <h3>Service Area</h3>
+
+                <p>
+                    Majorly Pune and Satara, with services
+                    available across Maharashtra.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="ssps-footer">
+
+    <div class="ssps-container">
+
+        <div class="ssps-footer-grid">
+
+            <div>
+
+                <h3>Shree Shivsamartha Power Solutions</h3>
+
+                <p>
+                    Solar and electrical solutions for residential,
+                    agricultural, commercial and industrial
+                    requirements.
+                </p>
+
+                <p>
+                    <strong>Part of Shree Shivsamartha Group</strong>
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About SSPS</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Our Services</h3>
+
+                <a href="#services">Rooftop Solar</a>
+                <a href="#services">Solar EPC</a>
+                <a href="#services">Electrical Contracting</a>
+                <a href="#services">Electrical Installation</a>
+                <a href="#services">Net Metering</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="ssps-copyright">
+
+            © 2026 Shree Shivsamartha Power Solutions.
+            All rights reserved. |
+            Part of Shree Shivsamartha Group.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a href="https://wa.me/918830521244"
+   target="_blank"
+   class="ssps-whatsapp"
+   aria-label="Chat with SSPS on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+</body>
+</html>
